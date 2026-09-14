@@ -52,6 +52,13 @@ jobs:
           cd simple_live_app
           flutter pub get
 
+      # 升级 Kotlin 版本
+      - name: Update Kotlin version
+        run: |
+          cd simple_live_app/android
+          sed -i 's/ext.kotlin_version = .*/ext.kotlin_version = "1.9.22"/' build.gradle
+          grep kotlin_version build.gradle
+
       # 打包APK（只 arm64）
       - name: Build APK (arm64)
         run: |
