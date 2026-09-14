@@ -104,4 +104,4 @@ flutter:
     - assets/lotties/
 dependency_overrides:
   dynamic_color: 1.7.0
-  auto_orientation_v2: 2.4.5
+  auto_orientation_v2: 2.3.8
